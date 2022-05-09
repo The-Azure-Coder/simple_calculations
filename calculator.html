@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    fieldset {
+        width: fit-content;
+    }
+
+    input {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    select {
+        display: block;
+        margin-bottom: 1rem;
+
+    }
+</style>
+
+<body>
+    <fieldset>
+        <legend>
+            <select name="" id="category">
+                <option selected disabled>Choose Operation</option>
+                <option value="Area with circumfrence">Area with circumfrence</option>
+                <option value="Area with radius">Area with radius</option>
+                <option value="Area with diameter">Area with diameter</option>
+                <option value="Area of rectangle">Area with rectangle</option>
+                <option value="calculator">calculator</option>
+            </select>
+        </legend>
+        <input type="text" placeholder="input1" id="val1">
+        <select id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="*">*</option>
+        </select>
+        <input type="text" placeholder="input2" id="val2">
+        <p>
+            The Output is
+            <span id="output"></span>
+        </p>
+        <button onclick="doCalculation()">Submit</button>
+
+
+        <script src="script.js"></script>
+    </fieldset>
+</body>
+
+</html>
